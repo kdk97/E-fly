@@ -1,0 +1,634 @@
+html * {
+    font-family: arial !important;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.logo {
+    height: 80px;
+    padding: 10px;
+    width: 100px;
+}
+
+.hotbar {
+    background-color: whitesmoke;
+    height: 100px;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+.top {
+    margin-left: 2%;
+}
+
+.top a {
+    font-family: arial;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    display: inline;
+    position: relative;
+    padding: 30px;
+    top: 40%;
+}
+
+.hotbar a:hover {
+    opacity: 0.8;
+    border-bottom: 4px solid #979797;
+}
+
+.hotbar a:active {
+    opacity: 0.8;
+    border-bottom: 4px solid #979797;
+}
+
+/*---------Dropdown button---------*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 1px solid black;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: black;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #979797;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/*---------Forside Slideshow---------*/
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    z-index: -1;
+}
+
+.text {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #1D34DE;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #797979;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.5s;
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*---------Forside Flexbox om Elcykel---------*/
+.elcykel {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 20px;
+    background: #D4D4D4;
+}
+
+.eltext1{
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    outline: 0.5px dotted black;
+}
+
+.elimg {
+    width: 100%;
+}
+
+.eltext {
+    font-family: inherit;
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+/*--------- E-fly sport max ----------*/
+
+.cykel {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.el {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: flex;
+    margin-right: 50px;
+    flex-wrap: wrap;
+}
+
+.gray-bg {
+    background-color: #bbbb;
+    padding: 5px;
+}
+
+.btn1 {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    transition: all .3s;
+    text-decoration: none;
+    display: block;
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn1:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.knap {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+/*---------Kontakt info---------*/
+.mapouter {
+    text-align: right;
+    height: 300px;
+    width: 300px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 300px;
+    width: 300px;
+}
+
+.kontaktflex {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.tekstinfo {
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+
+.tekstboks {
+    width: 100%;
+    height: 30px;
+}
+
+.kontakttext {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.sendklik {
+    display: block;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 1px solid #797979;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.sendklik:hover {
+    background-color: #979797;
+}
+
+/*----------Udlejning----------*/
+
+.udlejningbilleder{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px 60px;
+    margin: 0 auto;
+    background: grey;
+}
+
+.cyklerne{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    float: left;
+}
+
+.udlejning {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    max-width: 1300px;
+    margin: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fafafa;
+    margin: 4%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container-time {
+    background-color: #ffffff;
+    padding: 10%;
+    outline-offset: -30px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+.heading-days {
+    color: black;
+    font-size: 20px;
+}
+
+.heading-phone {
+    font-size: 15px;
+}
+
+.container-form {
+    display: flex;
+    padding: 10px 60px;
+    color: black;
+    margin: 0 auto;
+    background: #979797;
+    text-align: center;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+form p {
+    font-weight: 600;
+}
+
+.form-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    transition: all .3s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+/*------------ konkurrence ---------*/
+
+.quiz {
+    display: flex;
+    justify-content: center;
+}
+
+.emailk {
+    display: flex;
+    justify-content: center;
+}
+
+.dagenst {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.rundtom {
+    background: #CCCCCC;
+    margin: 0 auto;
+    border-left: 4px solid black;
+    max-width: 600px;
+    padding: 25px 0;
+}
+
+.rundtom ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.rundtom li {
+    margin-left: 20px;
+}
+
+/*---------udlejningbekraeft------------*/
+
+.btn-bestilt {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+    box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+    transition: all .3s;
+    text-decoration: none;
+    display: block;
+    width: 180px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.btn-bestilt:hover {
+    transform: scale(1.03);
+    box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+/*---------Footer---------*/
+
+.footercardheading {
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    border-top: #979797 solid 0.5px;
+    margin: auto;
+}
+
+.footerpics {
+    display: flex;
+    width: 100px;
+    align-content: center;
+}
+
+.footerlinks {
+    color: black;
+}
+
+@media only screen and (max-width: 320px) {
+    
+    .text {
+        font-size: 11px;
+    }
+
+    .mapouter {
+        width: 320px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .rundtom {
+         max-width: 400px;
+    }
+    
+    .udlejningbilleder{
+        display: flex;
+        width: 100%;
+        outline: 1px solid black;
+    }
+    
+    .container-form{
+        display: flex;
+        width: 100%;
+          outline: 1px solid black;
+    }
+    .top a {
+        display: none;
+    }
+
+    .slidelogo {
+        width: 35%;
+    }
+
+    .elcykel {
+        flex-direction: column;
+    }
+    
+    .udlejning {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    
+
+    
+    .valg {
+        background-color: red;
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 900px) {
+    
+
+    
+    .eltext{
+        margin-top: 50px;
+    }
+    
+    .elimg {
+        width: 100%;
+    }
+    
+    .liste{
+        margin-top: 250px;
+    }
+    
+    .cykel{
+        width: 50%;
+        float: right;
+    }
+    
+    .openbtn {
+        display: none;
+    }
+
+
+    .bstext {
+        font-family: inherit;
+        text-decoration: none;
+        color: black;
+    }
+
+    .kontaktflex {
+        flex-direction: row;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 15%;
+        padding-bottom: 20px;
+    }
+
+    .tekstboks {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    
+    .top a {
+        font-size: 14px;
+        padding: 25px;
+    }
+}
+
+

@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="da">
+
+<head>
+    <link rel="stylesheet" href="../style/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Udlejning af cykler">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Fly | Udlejning</title>
+    <script defer src="../js/JavaScript.js"></script>
+</head>
+
+<body>
+    <div class="hotbar">
+        <a href="../index.html"><img class="logo" src="../img/E-Fly-logo.png" alt="Logo"></a>
+        <div class="top">
+            <a href="/html/sportmax.html">Sport Max</a>
+            <a href="/html/udlejning.html">Udlejning</a>
+            <a href="/html/konkurrence.html">Konkurrence</a>
+            <a href="#">Vision</a>
+            <a href="#">Konkakt</a>
+        </div>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="/index.html">Forside</a>
+            <a href="/html/sportmax.html">Sport max</a>
+            <a href="/html/udlejning.html">Udlejning</a>
+            <a href="/html/konkurrence.html">Konkurrence</a>
+            <a href="#">Vision</a>
+            <a href="#">Kontakt</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Menu</button>
+        </div>
+    </div>
+    <main>
+        <div class="udlejning">
+            <div class="udlejningbilleder">
+                <img class="cyklerne" src="/img/cykel.png" alt="rødcykel"> <br>
+                <img class="cyklerne" src="/img/cykel2.png" alt="sortcykel">
+                <img class="cyklerne" src="/img/cykel3.png" alt="sortdame">
+            </div>
+            <div class="container-form">
+                <form action="#">
+                    <h2 class="heading heading-yellow">Cykel Udlejning</h2>
+
+                    <div class="form-field">
+                        <p>Navn</p>
+                        <input type="text" placeholder="Navn">
+                    </div>
+                    <div class="form-field">
+                        <p>Email</p>
+                        <input type="Email" placeholder="Email">
+                    </div>
+                    <div class="form-field">
+                        <p>Hvilken model</p>
+                        <select name="select" id="1">
+                            <option value="1">Sport max</option>
+                            <option value="2">Cross Sups</option>
+                            <option value="3">Pace Damemodel</option>
+                            <option value="4">Pace Herremodel</option>
+                            <option value="5">Nova Max</option>
+
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <p>Dato</p>
+                        <input type="date">
+                    </div>
+                    <div class="form-field">
+                        <p>Tidspunkt</p>
+                        <input type="time">
+                    </div>
+                    <div class="form-field">
+                        <p>Hvor mange personer</p>
+                        <select name="select" id="2">
+                            <option value="1">1 person</option>
+                            <option value="2">2 personer</option>
+                            <option value="3">3 personer</option>
+                            <option value="4">4 personer</option>
+                            <option value="5">5 personer</option>
+
+                        </select>
+                    </div>
+                    <a href="/html/udlejningsbekraeft.html" class="btn1">Bekræft</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footercard2">
+            <h1 class="footercardheading">Kontakt Os</h1>
+            <address>
+                Cykelgear.dk <br>
+                Industrivej 5<br>
+                9575 Terndrup<br>
+                Danmark<br>
+                <br>
+                Tlf: 60 70 83 83 <br>
+                Info@cykelgear.dk
+                <br>
+                CVR.: 3525002
+            </address>
+        </div>
+        <div class="footercard3">
+            <a href="#"><img class="footerpics" src="/img/GLS.png" alt="gls"></a>
+            <a href="#"><img class="footerpics" src="/img/DAO.png" alt="dao"></a>
+            <a href="#"><img class="footerpics" src="/img/postnord.png" alt="postnord"></a>
+        </div>
+    </footer>
